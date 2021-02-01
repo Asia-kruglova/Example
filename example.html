@@ -1,0 +1,116 @@
+<!-- Создание базовой структуры html-документа !Tab -->
+<!DOCTYPE html>
+<html lang="xyz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+</head>
+<body>
+    <div>
+        <p>В современном мире есть множество способов сохранить здоровье, но основными по прежнему остаются
+            самые простые из них, а именно:
+        </p>
+        <ul>
+            <li>сон</li>
+            <li>спорт</li>
+            <li>питание</li>
+        </ul>
+        <!-- Комментарий к маркированному списку-->
+        <!-- Shirft + Tab и весь обведенный блок переместится назад на одну ступень-->
+    </div>
+    
+    <img src="https://www.chaynikam.info/png/wwwhtmlbookru.png" width="20%" 
+    height="20%"
+    title="Это произвольно найденная мною картинка (для примера)" 
+    alt="Сорри"
+    border="0px" align="right"/>
+
+    <h1>Поля ввода в html5</h1>
+    <form name="test" action="" method="POST">
+        <input type="text" value="Поиск"/>
+        <input type="text" value="Поиск" placeholder="Поиск"/>
+        <input type="text"  placeholder="Поиск"/>
+        <input type="text"  placeholder="Поиск" maxlenght="10" 
+        name="code" title="Подсказка"/>
+    </br>
+        <label for="codesecret">Введите ваш код из трех цифр: </label><input type="text"  placeholder="Поиск" maxlength="3" 
+        name="code" title="Подсказка" id="codesecret"/>
+    </br>
+        <label for="date">Введите вашу дату рождения: </label><input type="date"  placeholder="Дата рождения" 
+        name="birthday"  id="date"/>
+    </br>
+        <label for="URL">Введите URL сайта: </label><input type="url" id="URL"/>
+    </br>
+        <input type="tel"/>
+    </br>
+        <input type="range"/>
+    </br>
+    <label for="male">Мужской: </label><input type="radio" name="state"  id="male"/>
+    <label for="female">Женский: </label><input type="radio" name="state"  id="female"/>
+    </br>
+    </br>
+    <input type="password"/>
+    <input type="number"/>
+    <input type="file"/>
+    <input type="checkbox"/>
+    </br>
+    </br>
+    <input type="button" value="Отправить button"/>
+    <input type="submit" value="Отправить submit"/>
+<!-- И button и submit это кнопки, но button для JS т.к. не происходит перезагрузка страницы, а
+submit больше для PHP т.к. происходит перезагрузка страницы-->
+    </form>
+
+<h2>Селекторы выбора select и option</h2>
+<!-- нужны для четкого и единственного выбора элемента пользователем из заданного списка-->
+<select>
+    <option>Курица</option>
+    <option>Индейка</option>
+</select>
+</br>
+<select>
+    <option>Курица</option>
+    <option selected="selected">Индейка</option>
+    <!-- этот атрибут говорит о том, какой именно вариант будет выделен по умолчанию в списке-->
+    <option>Макароны</option>
+    <option>Брокколи</option>
+</select>
+</br>
+<form action="" method="POST">
+    <select size="5" multiple="multiple" name="food[]">
+        <option disabled="disabled">Выберите жрачку</option>
+        <option value="Курица">Курица</option>
+        <option selected="selected" value="Индейка">Индейка</option>
+        <!-- этот атрибут говорит о том, какой именно вариант будет выделен по умолчанию в списке-->
+        <option value="Макароны">Макароны</option>
+        <option value="Брокколи">Брокколи</option>
+    </select>
+    <input type="submit" value="Отправить">
+</form>
+
+H<sub>2</sub>O
+</br>
+4<sup>2</sup>
+
+<!-- Следующие несколько тегов очень специфичны и могут работать не во всех браузерах! 
+См ниже-->
+<details>
+    <summary>Информация об авторе</summary>
+    <p>Бернард Шоу</p>
+</details>
+
+Проверка 123 <mark>выделенно</mark> 123 Проверка
+</br>
+<ruby>
+    жопа <rt>пишем через о</rt>
+    ёрш <rt>пишем через ё</rt>
+</ruby> 
+
+<progress max="100" value="25">
+    Загружено на <span id="value>"25</span></span>
+</progress>
+
+</body>
+</body>
+</html>
